@@ -4,6 +4,8 @@ Predicts the winner of NFL games using team form, scoring trends, rest days,
 and matchup context, built on real historical results (2003–present) from
 the open-source [nflverse](https://github.com/nflverse/nfldata) project.
 
+Live demo: https://nfl-game-predictor-2026.streamlit.app/ 
+
 ## How it works
 
 1. **`data_loader.py`** - downloads and caches `games.csv` from nflverse
