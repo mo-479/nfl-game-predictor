@@ -75,7 +75,7 @@ point it at this repo with `app.py` as the entry file. It installs
 
 ## Notes / possible extensions
 
-- Add QB-level features (starter changes, injuries) — `games.csv` includes
+- Add QB-level features (starter changes, injuries) - `games.csv` includes
   `home_qb_name` / `away_qb_name`, which aren't used here yet.
 - Incorporate `spread_line` (the closing Vegas spread) as a feature or as a
   separate benchmark — beating the market spread is a much higher bar than
