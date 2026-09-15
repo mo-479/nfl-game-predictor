@@ -6,11 +6,11 @@ the open-source [nflverse](https://github.com/nflverse/nfldata) project.
 
 ## How it works
 
-1. **`data_loader.py`** — downloads and caches `games.csv` from nflverse
+1. **`data_loader.py`** - downloads and caches `games.csv` from nflverse
    (one row per NFL game since 1999, with final scores, rest days,
    divisional-game flag, Vegas lines, and weather).
 
-2. **`features.py`** — reshapes the data into a per-team game log and builds
+2. **`features.py`** - reshapes the data into a per-team game log and builds
    **leakage-safe** rolling features: trailing 5-game win %, point
    differential, points scored/allowed, and season-to-date win %. Every
    feature for a given game only uses that team's *prior* games (via
@@ -19,7 +19,7 @@ the open-source [nflverse](https://github.com/nflverse/nfldata) project.
    (e.g., `point_diff_diff`, `season_win_pct_diff`) plus rest-day advantage
    and divisional-game flag.
 
-3. **`train.py`** — splits the data **chronologically** (trains on earlier
+3. **`train.py`** - splits the data **chronologically** (trains on earlier
    seasons, tests on the 3 most recent complete seasons — never a random
    split on time-series sports data), then trains and compares:
    - A naive home-field-only baseline
